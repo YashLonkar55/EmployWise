@@ -1,5 +1,7 @@
 # EmployWise User Management
 
+[![Live Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge)](https://your-app-name.netlify.app)
+
 A React.js application with Tailwind CSS that authenticates users and manages employee data using the Reqres API.
 
 ## ✨ Features
@@ -38,7 +40,7 @@ A React.js application with Tailwind CSS that authenticates users and manages em
 
 4. **Open in browser**
    ```
-   http://localhost:3000
+   http://localhost:5173
    ```
 
 5. **Build for production**
@@ -53,12 +55,3 @@ Password: cityslicka
 ```
 
 ```
-
-This version includes:
-- Emoji headers for better visual scanning
-- Minimal essential information
-- Clear installation steps
-- Test credentials section
-- All in proper markdown format
-
-Just copy-paste this into your README.md and replace the GitHub URL with your actual repository link.
