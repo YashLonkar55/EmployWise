@@ -1,26 +1,23 @@
-Here's a concise `README.md` with the essential sections you requested:
-
-```markdown
 # EmployWise User Management
 
 A React.js application with Tailwind CSS that authenticates users and manages employee data using the Reqres API.
 
 ## ✨ Features
 
-**User Authentication** with token persistence
-**Paginated User Listing** with avatars
-**CRUD Operations** (Create, Read, Update, Delete)
-**Responsive Design** for all devices
-**Form Validation** and error handling
+- **User Authentication** with token persistence
+- **Paginated User Listing** with avatars
+- **CRUD Operations** (Create, Read, Update, Delete)
+- **Responsive Design** for all devices
+- **Form Validation** and error handling
 
 ## 🛠 Tech Stack
 
-**Frontend**: React.js
-**Styling**: Tailwind CSS
-**Routing**: React Router
-**API Client**: Axios
-**State Management**: Context API
-**Build Tool**: Vite
+- **Frontend**: React.js
+- **Styling**: Tailwind CSS
+- **Routing**: React Router
+- **API Client**: Axios
+- **State Management**: Context API
+- **Build Tool**: Vite
 
 ## 🚀 Installation Guide
 
@@ -28,7 +25,6 @@ A React.js application with Tailwind CSS that authenticates users and manages em
    ```bash
    git clone https://github.com/your-username/employwise-assignment.git
    cd employwise-assignment
-   ```
 
 2. **Install dependencies**
    ```bash
