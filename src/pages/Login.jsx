@@ -41,21 +41,34 @@ function Login() {
 
   return (
     <div 
-  className="min-h-screen flex items-center justify-center p-4" 
-  style={{ 
-    background: 'radial-gradient(circle, rgba(224, 126, 15, 0.3) 10%, rgba(222, 151, 19, 0.3) 30%, #ffffff 70%)' 
-  }}
->
+      className="min-h-screen flex items-center justify-center p-4" 
+      style={{ 
+        background: 'radial-gradient(circle, rgba(224, 126, 15, 0.3) 10%, rgba(222, 151, 19, 0.3) 30%, #ffffff 70%)',
+        padding: '1rem'
+      }}
+    >
+      <div 
+        className="w-full p-6 md:p-8 rounded-xl shadow-lg bg-white/90 backdrop-blur-sm"
+        style={{
+          maxWidth: '28rem', // Slightly wider on desktop
+          margin: '1rem',
+          transition: 'all 0.3s ease'
+        }}
+      >
+        <div className="flex flex-col items-center justify-center mb-6 md:mb-8">
 
-
-
-      <div className="w-full max-w-md p-8 floating-container animate-fade">
-        <div className="flex items-center justify-center mb-8">
-          <Typography variant="h4" component="h1" className="text-gray-900 font-bold">
+          <Typography 
+            variant="h4" 
+            component="h1" 
+            className="text-gray-900 font-bold"
+            sx={{
+              fontSize: { xs: '1.5rem', sm: '2rem' } // Responsive font size
+            }}
+          >
             Sign In
           </Typography>
         </div>
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
           <TextField
             fullWidth
             label="Email"
@@ -66,9 +79,14 @@ function Login() {
             required
             sx={{
               '& .MuiOutlinedInput-root': {
-                backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                backgroundColor: 'rgba(255, 255, 255, 0.9)',
+              },
+              '& .MuiInputLabel-root': {
+                fontSize: { xs: '0.875rem', sm: '1rem' } // Responsive label size
               }
             }}
+            size="small" // Smaller on mobile
+            margin="normal"
           />
           <TextField
             fullWidth
@@ -80,9 +98,14 @@ function Login() {
             required
             sx={{
               '& .MuiOutlinedInput-root': {
-                backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                backgroundColor: 'rgba(255, 255, 255, 0.9)',
+              },
+              '& .MuiInputLabel-root': {
+                fontSize: { xs: '0.875rem', sm: '1rem' } // Responsive label size
               }
             }}
+            size="small" // Smaller on mobile
+            margin="normal"
           />
           <Button
             fullWidth
@@ -94,12 +117,20 @@ function Login() {
               backgroundColor: '#1e293b',
               '&:hover': {
                 backgroundColor: '#334155'
-              }
+              },
+              py: { xs: '0.5rem', sm: '0.75rem' }, // Responsive padding
+              fontSize: { xs: '0.875rem', sm: '1rem' } // Responsive font size
             }}
           >
             {loading ? 'Signing in...' : 'Sign In'}
           </Button>
-          <Typography variant="body2" className="text-center text-gray-500 mt-4">
+          <Typography 
+            variant="body2" 
+            className="text-center text-gray-500 mt-4"
+            sx={{
+              fontSize: { xs: '0.75rem', sm: '0.875rem' } // Responsive font size
+            }}
+          >
             Use email: eve.holt@reqres.in | password: cityslicka
           </Typography>
         </form>
